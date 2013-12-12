@@ -12,7 +12,33 @@ body
     background-color: #e9e8e4;
   
 }
-.typo
+.jumbotron
 {
-      color: #ea3852;
+     /* color: #ea3852;*/
+}
+.photo
+{
+    margin-top: 10px;
+}
+.list-group-item.active, .list-group-item.active:hover
+{
+     background-color:#ea3852;
+      border-color:#ea3852;
+}
+.navbar-inverse .navbar-brand {
+color: #ea3852;
+}
+
+a {
+color: #ea3852;
+}
+
+.jumbotron {
+padding: 30px;
+margin-bottom: 30px;
+font-size: 15px;
+font-weight: 200;
+line-height: 2.1428571435;
+color: inherit;
+background-color: #eee;
 }
