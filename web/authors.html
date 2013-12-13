@@ -62,7 +62,7 @@ and open the template in the editor.
         <!-- breadcrumb -->
         <div class="container">
             <ol class="breadcrumb">
-                <li><a href="#">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li class="active">Toulouse-Lautrec</li>
             </ol>
         </div>
@@ -80,12 +80,15 @@ and open the template in the editor.
                             <img class="featurette-image img-responsive" alt="Generic placeholder image" src="img/001.jpg">
                         </div>
                         <div class="col-md-7">
-                            <h2 class="featurette-heading">Henri de Toulouse-Lautrec <span class="text-muted">24 November 1864 – 9 September 1901</span></h2>
-                            <p class="lead">Henri de Toulouse-Lautrec was a French painter, printmaker, draughtsman and illustrator whose immersion in the colourful and theatrical life of Paris 
-                                in the late 1800s yielded a collection of exciting, elegant and provocative images of the modern and sometimes decadent life of those times.</p>
+                            <h2 class="featurette-heading">Henri de Toulouse-Lautrec <span class="text-muted">
+                                    24 November 1864 – 9 September 1901</span></h2>
+                            <p class="lead">Henri de Toulouse-Lautrec was a French painter, printmaker, draughtsman and 
+                                illustrator whose immersion in the colourful and theatrical life of Paris 
+                                in the late 1800s yielded a collection of exciting, elegant and provocative images of the 
+                                modern and sometimes decadent life of those times.</p>
                             <!-- Button trigger modal -->
                             <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-                                Launch demo modal
+                                Further information
                             </button>
 
                             <!-- Modal -->
@@ -94,14 +97,22 @@ and open the template in the editor.
                                     <div class="modal-content">
                                         <div class="modal-header">
                                             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                            <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                                            <h4 class="modal-title" id="myModalLabel">Further information about the author</h4>
                                         </div>
                                         <div class="modal-body">
-                                            ...
+                                            <h5>List of the different museums where you can find an exhibition of the author</h5>
+                                            <div class="list-group">
+                                                <a href="http://www.museetoulouselautrec.net/" class="list-group-item active">
+                                                    Museé Toulouse-Lautrec
+                                                </a>
+                                                <a href="http://www.nga.gov/exhibitions/2005/toulouse/index.shtm" class="list-group-item">National Gallery of Art</a>
+                                                <a href="http://bibliotheque-numerique.inha.fr/collection/?r=Top%2Fdl_category%2Festampes%2Festampes+de+henri+de+toulouse-lautrec+%281864-1901%29&navigation=0&dq=%23reset" class="list-group-item">Institut National d'histoire de l'art</a>
+                                                <a href="http://www.courtauld.ac.uk/gallery/exhibitions/2011/Lautrec.shtml" class="list-group-item">The Courtauld Gallery</a>
+                                                <a href="http://www.moma.org/collection/artist.php?artist_id=5910" class="list-group-item">Museum of Modern Art (MOMA)</a>
+                                            </div>
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                            <button type="button" class="btn btn-primary">Save changes</button>
                                         </div>
                                     </div><!-- /.modal-content -->
                                 </div><!-- /.modal-dialog -->
@@ -120,17 +131,11 @@ and open the template in the editor.
                             </ul>
 
                             <div class="tab-content">
-                                <div class="tab-pane active" id="home"><a href="#"><img alt="001" src="img/002.jpg">
-                                            <span class="glyphicon glyphicon-star"></span></div>
+                                <div class="tab-pane active" id="home"><img alt="001" src="img/002.jpg"></div>
                                 <div class="tab-pane" id="profile"><img alt="002" src="img/003.jpg"></div>
                                 <div class="tab-pane" id="messages"><img alt="003" src="img/004.jpg"></div>
                                 <div class="tab-pane" id="settings"><img alt="004" src="img/005.jpg"></div>
                             </div>
-                            <script>
-                                $(function() {
-                                    $('#myTab a:last').tab('show')    
-                                })
-                            </script>
                         </div>
                     </div><!--/row-->
                 </div><!--/span-->
@@ -162,8 +167,9 @@ and open the template in the editor.
         <!--tab for author gallery-->
         <script src="js/tab.js"></script>
         <!--tooltip for author gallery-->
-        <link href="js/popover.js" rel="stylesheet">
-        <link href="js/transition.js" rel="stylesheet">
+        <script src="js/popover.js" ></script>
+        <script src="js/transition.js" ></script>
+        <script src="js/modal.js" ></script>
     </body>
 </html>
 
